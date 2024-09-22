@@ -89,40 +89,44 @@ main h2 {
     grid-row: 1/2;
     grid-column: 3/4;
     text-align: center;
+    font-size: 30px;
     gap: 20px;
     width: 100%;
     max-width: 600px;
 }
 
 #card-2 ul {
-    display: inline-block;
+    display: block;
     padding: 60px;
     grid-row: 1/2;
     grid-column: 1/2;
     margin: 0;
-    text-align: left;
-    align-self: center;
-    justify-self: center;
+    text-align: center;
+    align-self: auto;
+    justify-self: right;
 }
 
-#card-2 ul li {
+#card-2 ul a {
     padding: 0.5rem;
     color:blue;              
     text-decoration: none;         
-    transition: color 0.3s ease; 
+    transition: color 0.3s; 
 }
 
-#card-2 ul li:hover {
+#card-2 ul a:hover {
     color: #3620ff;               
     text-decoration: none;  
 }
 
 #card-1 p {
     display: flex;
-    align-items: center;
     padding: 2rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.5em;
+}
+
+#aboutme-p {
+    margin-right: 160px;
 }
 
 .right-img {
@@ -132,7 +136,7 @@ main h2 {
     border: 1px solid lightgrey;
     padding: 1px;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: -145px;
     box-shadow: 0 0 30px gray;
 }
 
