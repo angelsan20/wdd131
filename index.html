@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Angel Asdrubal Santafé Cárcamo</title>
+    <meta name="description" content="Angel Asdrubal Santafé Cárcamo Home page - WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Angel Asdrubal Santafé Cárcamo">
+    <title>WDD 131 - Dynamic Web Fundamentals - Angel Asdrubal Santafé Cárcamo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 131 - BYU Idaho - Dynamic Web Fundamentals</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="header-name">Angel Asdrubal Santafé Cárcamo</span></h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/angel-santafe-27b746205/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p45-p46#p45" target="_blank">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card" id="card-1">
+            <h2>About Me</h2>
+            <p>Hello, my name is Angel Asdrúbal Santafé, I was born in Venezuela, 
+                I have been married for 2 years, I'm currently working as salesman in a filter store for all kind of engines, 
+                I love to share time with my family and friends.</p>
+            <img src="images/profile.webp" alt="Profile picture" class="right-img">
+            <h3>Venezuela</h3>
+            <img src="images/640px-Flag_of_Venezuela.webp" alt="Official Flag of Venezuela." class="left-img">
+            <p>Venezuela, officially the Bolivarian Republic of Venezuela, 
+                is a country on the northern coast of South America, 
+                consisting of a continental landmass and many islands and islets in the Caribbean Sea. 
+                It comprises an area of 916,445 km2 (353,841 sq mi).</p>
+        </section>
+        <section class="card" id="card-2">
+            <h2>Web Dev Resources</h2>
+            <ul></ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">I-Learn</a></li>
+                <li><a href="">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+
+        <p>Last Update: <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
 </html>
