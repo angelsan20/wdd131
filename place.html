@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place page - Week 03 Assignment</title>
+    <meta name="description"
+        content="Place page is a page about any place selected by the student with a little resume of vital info about the country where is that place and the weather of the place.">
+    <meta name="author" content="Angel Asdrubal Santafé Cárcamo">
+    <!--CSS linked documents-->
+    <link rel="stylesheet" href="styles/place.css">
+    <!--Scripts linked documents-->
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>JAPAN</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 750px)" srcset="images/fuji-view-tokio.webp"> <!-- large -->
+                <img src="images/fuji-view-mobile.webp" alt="" width="500" height="250"> <!-- small -->
+            </picture>
+        </div>
+        <section class="container data">
+            <div class="container-title">
+                <h2>Data</h2>
+                <img src="images/Flag-of-Japan.png" alt="japan flag">
+            </div>
+            <table>
+                <tr>
+                    <td class="label">Area:</td>
+                    <td>377,975 sq km</td>
+                </tr>
+                <tr>
+                    <td class="label">Population:</td>
+                    <td>123,970,000</td>
+                </tr>
+                <tr>
+                    <td class="label">Capital:</td>
+                    <td>Tokio</td>
+                </tr>
+                <tr>
+                    <td class="label">Languages:</td>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td class="label">Currency:</td>
+                    <td>Japanese Yen</td>
+                </tr>
+                <tr>
+                    <td class="label">Time Zone:</td>
+                    <td>UTC +9</td>
+                </tr>
+                <tr>
+                    <td class="label">Calling Code:</td>
+                    <td>+81</td>
+                </tr>
+                <tr>
+                    <td class="label">Internet TLD:</td>
+                    <td>.jp</td>
+                </tr>
+            </table>
+        </section>
+        <section class="container weather">
+            <div class="container-title">
+                <h2>Weather</h2>
+                <img src="images/sun-cloud-icon.svg" alt="sun and cloud icon">
+            </div>
+            <table>
+                <tr>
+                    <td class="label">Temperature:</td>
+                    <td><strong id="temp-value">28</strong> °C</td>
+                </tr>
+                <tr>
+                    <td class="label">Conditions:</td>
+                    <td>Clear</td>
+                </tr>
+                <tr>
+                    <td class="label">Humidity:</td>
+                    <td>68%</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind Speed:</td>
+                    <td><strong id="windspeed-value">21</strong> km/h</td>
+                </tr>
+                <tr>
+                    <td class="label">Windchill:</td>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🛕 Angel Asdrubal Santafé Cárcamo🛕 Valencia, Venezuela.</p>
+        <p>Last Update: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
