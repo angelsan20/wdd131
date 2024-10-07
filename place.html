@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place page - Week 03 Assignment</title>
+    <title>Place of Interest - Week 03 Assignment - WDD 131</title>
     <meta name="description"
         content="Place page is a page about any place selected by the student with a little resume of vital info about the country where is that place and the weather of the place.">
     <meta name="author" content="Angel Asdrubal Santafé Cárcamo">
@@ -13,6 +13,10 @@
     <!--Scripts linked documents-->
     <script src="scripts/place.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <!--links for the document Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
@@ -22,14 +26,13 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 750px)" srcset="images/fuji-view-tokio.webp"> <!-- large -->
-                <img src="images/fuji-view-mobile.webp" alt="" width="500" height="250"> <!-- small -->
+                <source media="(min-width: 750px)" srcset="images/fuji-view-tokio.webp" aria-label="view of the fuji mount, the city of tokio and a temple."> <!-- large img -->
+                <img src="images/fuji-view-mobile.webp" alt="temple and fuji mount" width="500" height="250"> <!-- small img-->
             </picture>
         </div>
         <section class="container data">
             <div class="container-title">
                 <h2>Data</h2>
-                <img src="images/Flag-of-Japan.png" alt="japan flag">
             </div>
             <table>
                 <tr>
@@ -97,7 +100,7 @@
 
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🛕 Angel Asdrubal Santafé Cárcamo🛕 Valencia, Venezuela.</p>
+        <p>&copy; <span id="currentyear"></span> 🍣 Angel Asdrubal Santafé Cárcamo 🏯 Valencia, Venezuela.</p>
         <p>Last Update: <span id="lastModified"></span></p>
     </footer>
 

@@ -1,6 +1,7 @@
 :root {
     --letters: rgb(0, 0, 0);
-    --container: rgba(255, 255, 255, 0.733);
+    --container-large: rgba(255, 255, 255, 0.733);
+    --container-short: rgba(160, 160, 160, 0.76);
     --borders: rgba(0, 146, 231, 0.637);
 }
 
@@ -46,11 +47,14 @@ main {
 
 picture {
     background-color: var(--borders);
-    border: solid var(--borders);
 }
 
 section img {
     max-width: 6rem;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 aside {
@@ -59,7 +63,7 @@ aside {
 }
 
 .container {
-    background-color: var(--container);
+    background-color: var(--container-short);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,18 +79,14 @@ table td {
 }
 
 footer {
-    border-top: 1rem solid var(--borders);
+    background-color: var(--borders);
     padding: 2rem;
     text-align: center;
-    font-size: small;
+    font-size: large;
+    font-weight: bold;
 }
 
-footer p {
-    font-weight: 500;
-}
-
-
-@media (min-width:750px) {
+@media (min-width:800px) {
     main {
         position: relative;
     }
@@ -115,8 +115,12 @@ footer p {
         margin-bottom: .5rem;
     }
 
-    .container-title>img {
+    .container-title img {
         display: none;
+    }
+
+    .container {
+        background-color: var(--container-large);
     }
 
     .weather h2::after {
@@ -125,11 +129,5 @@ footer p {
 
     header {
         font-size: x-large;
-    }
-}
-
-@media (min-width:700px) {
-    .border-t {
-        border: none;
     }
 }

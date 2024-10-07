@@ -1,6 +1,4 @@
 const windchill = document.querySelector("#windchill");
-const temperature = document.getElementById("temp-value");
-const windSpeed = document.getElementById("windspeed-value")
 
 function calculateWindChill(temperature, windSpeed, unit) {
     if ((unit === 'metric' && temperature <= 10 && windSpeed > 4.8) ||
