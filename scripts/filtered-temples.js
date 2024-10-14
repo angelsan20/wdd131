@@ -55,5 +55,87 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
-  ];
+    {
+      templeName: "Caracas Venezuela",
+      location: "Caracas, Capital District, Venezuela",
+      dedicated: "2000, August, 20",
+      area: 15332,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/400x225/caracas_venezuela_temple_detail_1691066_2400x1200.jpg"
+      
+    },
+    {
+      templeName: "Curitiba Brazil",
+      location: "Curitiba, Parana, Brazil",
+      dedicated: "2008, June, 1",
+      area: 27850,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/curitiba-brazil/400x400/curitiba-brazil-temple-lds-852263-wallpaper.jpg"
+      
+    },
+    {
+      templeName: "Provo City Center",
+      location: "Provo, Utah, United States",
+      dedicated: "2016, March, 20",
+      area: 85084,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple03.jpg"
+      
+    },
+    {
+      templeName: "Salt Lake",
+      location: "Salk Lake City, Utah, United States",
+      dedicated: "1893, April, 6-24",
+      area: 382207,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
+      
+    },
+];
+
+  function templeCard(temple) {
+    return ` 
+            <div class="card">
+                <h3>${temple.templeName}</h3>
+                <p><span> Location: </span> ${temple.location}</p>
+                <p><span> Dedicated: </span> ${temple.dedicated}</p>
+                <p><span> Area: </span> ${temple.area}</p>
+                <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" width="400" min-height="250" />
+            </div>`;
+}
+
+
+function showTemple(temples) {
+  const mainContainer = document.querySelector('.container');
+  const templeCards = temples.map(templeCard).join("");
+  mainContainer.innerHTML = templeCards;
+}
+
+showTemple(temples);
+
+// [array].filter([individual item inside temple] => [convert to date].getFullYear [< condition])
+
+document.querySelector("#home").addEventListener("click", () => {
+    showTemple(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+    let oldTemple = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+    showTemple(oldTemple);
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+    let newTemple = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+    showTemple(newTemple);
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+    let largeTemple = temples.filter(temple => temple.area > 90000);
+    showTemple(largeTemple);
+});
+
+
+document.querySelector("#small").addEventListener("click", () => {
+    let smallTemple = temples.filter(temple => temple.area < 10000);
+    showTemple(smallTemple);
+});
