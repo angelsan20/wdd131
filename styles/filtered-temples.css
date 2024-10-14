@@ -67,10 +67,36 @@ img {
     height: auto;
 }
 
-figcaption {
+.card {
+    color: rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    border: none;
+    background-color: rgba(0, 107, 150, 0.822);
+    padding: 1.5rem;
     text-align: center;
-    margin: 0.5rem;
-    font-size: 20px;
+}
+
+.card>h3 {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1rem 0;
+}
+
+.card>img {
+    width: 100%;
+    min-height: auto;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
+     rgba(0, 0, 0, 0.6) 0px 7px 13px -3px inset;
+    margin: 1rem 0 0 0;
+    border-radius: 0.6rem;
+}
+
+.card>p {
+    flex-grow: 1;
+}
+
+.card>span {
     font-weight: bold;
 }
 
@@ -102,6 +128,7 @@ figcaption {
 #lastModified {
     color: rgb(255, 255, 255);
     font-weight: bold;
+    font-size: 20px;
 }
 
 footer {
@@ -109,4 +136,5 @@ footer {
     color: rgb(255, 255, 255);
     padding: 1rem;
     font-size: large;
+    margin-top: 20px;
 }

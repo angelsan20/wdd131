@@ -70,7 +70,7 @@ const temples = [
       dedicated: "2008, June, 1",
       area: 27850,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/curitiba-brazil/400x400/curitiba-brazil-temple-lds-852263-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-18837.jpg"
       
     },
     {
