@@ -1,17 +1,17 @@
 const form = document.getElementById('myform');
 const counterElement = document.getElementById('counter');
 
-let counter = parseInt(localStorage.getItem('counter')) || 0;
+let counter = parseInt(localStorage.getItem('surveyCount')) || 0;
 
-counterElement.textContent = `Total Submissions: ${counter}`;
+counterElement.textContent = `Encuestas enviadas: ${counter}`;
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); 
+form.addEventListener('submit', () => {
+  
+  counter++;
 
-    contador++;
+  
+  localStorage.setItem('surveyCount', counter);
 
-    counterElement.textContent = `Total Submissions: ${counter}`;
-    localStorage.setItem('counter', counter);
-
-   
+  
+  counterElement.textContent = `Encuestas enviadas: ${counter}`;
 });
