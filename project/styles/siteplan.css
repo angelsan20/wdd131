@@ -3,13 +3,13 @@
 }
 
 body {
-    margin: 0 auto;
     background-color: rgb(219, 242, 255);
 }
 
 header {
+    margin: 0;
     background-color: rgb(255, 231, 241);
-    padding: 8px;
+    padding: 0;
     border-bottom: solid 1px;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
@@ -19,13 +19,46 @@ header {
     justify-content: center;
 }
 
+#sitename {
+    font-weight: bolder;
+    font-size: large;
+}
+
+main {
+    margin: 0 30px 0 30px;
+    width: 100%;
+}
+
 h2 {
     text-decoration: underline;
 }
 
-#sitename {
-    font-weight: bolder;
-    font-size: large;
+section {
+    margin: 0 30px 0 30px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wireframe-section {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+#wireframe-1 img {
+    max-width: 700px;
+    margin: 10px;
+    border: solid 2px;
+}
+
+#wireframe-2 img {
+    max-width: 250px;
+    margin: 10px;
+    border: solid 2px;
 }
 
 footer {
@@ -39,9 +72,9 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-/*rgb(179, 215, 255)AZUL
+@media (max-width: 720px) {
+    .wireframe {
+        flex-direction: column;
+        justify-content: space-between;
 
-(248, 144, 170) rosa intenso
-
-
-rgb(241, 241, 235) BEIGE*/
+    }}
