@@ -31,9 +31,12 @@ h2 {
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top: solid 1px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
     text-align: center;
-    background-color: rgb(1, 58, 145);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 231, 241);
+    color: rgb(0, 0, 0);
 }
 
 /*rgb(179, 215, 255)AZUL
