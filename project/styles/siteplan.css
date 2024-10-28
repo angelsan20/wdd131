@@ -1,0 +1,44 @@
+* {
+    font-family: "Arimo", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(219, 242, 255);
+}
+
+header {
+    background-color: rgb(255, 231, 241);
+    padding: 8px;
+    border-bottom: solid 1px;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#sitename {
+    font-weight: bolder;
+    font-size: large;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(1, 58, 145);
+    color: rgb(255, 255, 255);
+}
+
+/*rgb(179, 215, 255)AZUL
+
+(248, 144, 170) rosa intenso
+
+
+rgb(241, 241, 235) BEIGE*/

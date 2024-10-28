@@ -107,19 +107,8 @@ main {
     max-width: 100%;
 }
 
-.card {
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    border: 2px solid rgb(176, 174, 174);
-    margin: 2rem;
-    max-width: 50%;
-    padding: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
 legend {
-    padding: 0 .5rem;
+    padding: 0.5rem;
     font-weight: bold;
 }
 

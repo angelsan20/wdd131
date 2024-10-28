@@ -6,69 +6,87 @@
         <title>2x1Home Siteplan Page | WDD 131</title>
         <meta name="description" content=".">
         <meta name="author" content="Angel Asdrubal Santafé Cárcamo">
-        <link rel="stylesheet" href="styles/">
+        <link rel="stylesheet" href="styles/siteplan.css">
+        <script src="/scripts/getdates.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Wellfleet&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>2x1 Home - Site Plan</h1>
-            <div>by Angel Asdrubal Santafé Cárcamo</div>
+            <img src="images/2x1Home.webp" alt="2x1 Home Logo" width="160" height="160">
+            <h1>2x1 HOME - Project Site Plan</h1>
         </header>
         <main>
-            <h2>Overview</h2>
-
-            <h3>Purpose</h3>
-            <p>
-                
-            </p>
-        
-            <h3>Audience</h3>
-            <p>
-                
-            </p>
-
-            <h2>Branding</h2>
-
-            <h3>Website Logo</h3>
-            <img src="images/" alt="" width="200">
-        
-            <h2>Style Guide</h2>
-        
-            <h3>Color Palette</h3>
-                <ul> 
-                    <li>primary-color: #768A05 (Olive)</li>
-                    <li>secondary-color: #d8975a (Persian Orange)</li>
-                    <li>accent1-color: #000000 (Black)</li>
-                    <li>accent2-color: #b80f00 (Engineering Orange)</li>
-                </ul>
+            
+            <h2>SITE DESCRIPTION</h2>
+            
+            <section>
+                <h3>SITE NAME</h3>
                 <p>
-                <strong>Palette URL:</strong> <a href="" target="_blank"></a>
+                    <span id="sitename">2x1HOME</span><br>
+                    The name represents the goal of the site which is to share messages to support marriage 
+                    and help younger couples improve their relationships through some tips. 
                 </p>
-            <h3>Typography</h3>
+            </section>
             
-            <h4>Headings Example Font</h4>
-            <p>Ubuntu - Sans Serif</p>
+            <section>
+                <h3>SITE PURPOSE</h3>
+                <p>
+                    The goal of this site is to provide a list of inspirational messages about marriage, marriage strengthening and couple growth to enhance the relationship,
+                    using resources such as sharing daily quotes and various messages to help all visitors to strengthen their relationship, 
+                    the website includes:
+                    <ul>
+                        <li>A home page with a daily quote and 2 weekly messages.</li>
+                        <li>A collection of messages that users can read, share online and even download to print or study offline.</li>
+                        <li>A page to post comments or other suggested messages to add to our catalog.</li>
+                    </ul>
+                </p>
+            </section>
             
-            <h4>Normal Text/Paragraph Example Font</h4>
-            <p>Rubik - Sans Serif</p>
+            <section>
+                <h3>SCENARIOS</h3>
+                <ul>
+                    <li>What should I do to keep my relationship stable?</li>
+                    <li>How can I be a better husband/wife and be more helpful in the responsibilities we share?</li>
+                    <li>How can I show more love to my husband/wife?</li>
+                    <li>What can I do in my marriage to avoid routine and keep us in love?</li>
+                    <li>How do I adapt to my new home?</li>
+                    <li>How do I adjust to the arrival of children?</li>
+                </ul>
+            </section>
             
-            <h4>Colored Callout Example Font</h4>
-            <p>Rubik - Sans Serif</p>
+            <h2>STYLE</h2>
+
+            <section> 
+                <h3>COLOR SCHEMA</h3>
+                    <ul> 
+                        <li>primary-color: #768A05 (Olive)</li>
+                        <li>secondary-color: #d8975a (Persian Orange)</li>
+                        <li>accent1-color: #000000 (Black)</li>
+                        <li>accent2-color: #b80f00 (Engineering Orange)</li>
+                    </ul>
+                    <p>
+                        <strong>Palette URL:</strong> <a href="" target="_blank"></a>
+                    </p>
+            </section>
             
-            <h3>Navigation</h3>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Trips</a>
-                <a href="#">Contact Us</a>
-            </nav>
-            <h2>Wireframes</h2>
-            <h3>Home Page Wireframe</h3>
-            <img src="" alt="" width="700">
-            <h3>About Us Page Wireframe</h3>
-            <img src="" alt="" width="700">
+            <section>
+                <h3>TYPOGRAPHY</h3>
+            </section>
+            
+            <section>
+                <h3>WIREFRAMES</h3>
+                <h3>Home Page - Large Viewports Wireframe</h3>
+                <img src="images/2x1Home-Larger Viewports Wireframe.PNG" alt="Home page Wireframe for larger viewports.">
+                <h3>Home Page - Mobile Views Wireframe</h3>
+                <img src="images/2x1Home-Mobile Wireframe.PNG" alt="Home page Wireframe for mobile views.">
+            </section>
         </main>
         <footer>
-            <p>&copy;2024 Angel Asdrubal Santafé Cárcamo  WDD 131</p>
+            <p>&copy; <span id="currentyear"></span> Angel Asdrubal Santafé Cárcamo Valencia, Venezuela.</p>
+            <p>Last Update: <span id="lastModified"></span></p>
         </footer>
     
     </body>
