@@ -9,9 +9,9 @@
 
         <style>
             body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
+                background-color: rgb(218, 241, 255);
+                font-family: "Arimo", sans-serif;
+                margin: 0 auto;
                 box-sizing: border-box;
             }
 
@@ -20,24 +20,30 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 1 0px 20px;
-                background-color: #f1f1f1;
+                background-color: rgb(255, 231, 241);
             }
 
             .header img {
-                width: 120px;
-                height: 120px;
+                width: 130px;
+                height: 130px;
+                margin-right: 0px;
+            }
+
+            .header h1 {
+                margin: 0;
             }
 
             .nav {
                 display: flex;
                 gap: 15px;
+                margin-left: auto;
             }
 
             .nav a {
                 text-decoration: none;
-                color: black;
+                color: rgb(0, 0, 0);
                 padding: 10px 15px;
-                background-color: #ddd;
+                background-color: rgb(221, 221, 221);
                 border-radius: 5px;
             }
 
@@ -49,14 +55,35 @@
             }
 
             .quote-section {
-                background-color: #e9e9e9;
+                background-color: rgba(0, 0, 0, 0.589);
+                padding: 20px; display: flex; 
+                align-items: center;
+                margin: 20 40 20 40;
+                border-radius: 1.5rem;
             }
 
             .quote-section img {
                 max-width: 120px;
                 height: auto;
-                display: block;
-                margin: 0 auto;
+                margin: 15px;
+                border: 10px solid rgb(0, 0, 0);
+            }
+
+            .quote-text { 
+                text-align: right;
+                flex: 1;
+            } 
+            
+            .p1 { 
+                margin: 0; 
+                font-size: 1.5em; 
+                text-align: left;
+                color: rgb(255, 255, 255);
+            } 
+            
+            .p2 { 
+                margin: 5px 0 0 0;
+                color: rgb(255, 255, 255);
             }
 
             .messages-section {
@@ -183,8 +210,8 @@
             
                 quoteSection.innerHTML = `
                     <img src="${quoteData.image}" alt="${quoteData.alt}">
-                    <h2>"${quoteData.quote}"</h2>
-                    <p>${quoteData.speaker}</p>
+                    <p class="p1">"${quoteData.quote}"</p>
+                    <p class="p2">${quoteData.speaker}</p>
                 `;
             }
         
@@ -254,12 +281,7 @@
             </div>
         </header>
         <main>
-            <div class="quote-section">
-                <h2>"Quote of the day"</h2>
-                <img src="quote-image-placeholder.png" alt="Quote Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.</p>
-            </div>
+            <div class="quote-section"></div>
             <section class="messages-section">
                 <div class="message"></div>
                 <div class="message"></div>
