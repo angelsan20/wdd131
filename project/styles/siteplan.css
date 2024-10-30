@@ -4,6 +4,7 @@
 
 body {
     background-color: rgb(219, 242, 255);
+    min-width: 220px;
 }
 
 header {
@@ -51,6 +52,7 @@ section {
 
 #wireframe-1 img {
     max-width: 700px;
+    min-width: 80px;
     margin: 10px;
     border: solid 2px;
 }

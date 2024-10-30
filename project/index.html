@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2x1Home - Building Bonds, Building Homes</title>
+        <meta name="description" content=".">
+        <meta name="author" content="Angel Asdrubal Santafé Cárcamo">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1 0px 20px;
+                background-color: #f1f1f1;
+            }
+
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .nav {
+                display: flex;
+                gap: 15px;
+            }
+
+            .nav a {
+                text-decoration: none;
+                color: black;
+                padding: 10px 15px;
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+
+            .quote-section,
+            .messages-section,
+            .footer {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .quote-section {
+                background-color: #e9e9e9;
+            }
+
+            .quote-section img {
+                max-width: 120px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .messages-section {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .message {
+                width: 45%;
+                background-color: #f9f9f9;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .message img {
+                max-width: 150px;
+                height: auto;
+            }
+        </style>
+
+        <script>
+            const quotes = [
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+                {
+                    quote: "Marriage is a gift from God to us; the quality of our marriages is a gift from us to Him.",
+                    speaker: "L. Whitney Clayton",
+                    image: "https://www.churchofjesuschrist.org/imgs/71387a567147fb0080baa99b008dcb54099e9eef/full/!320%2C400/0/default",
+                    alt: "L. Whitney Clayton"
+                },
+            ];
+            
+            function getRandomQuote() {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                return quotes[randomIndex];
+            }
+        
+            function displayQuote() {
+                const quoteSection = document.querySelector('.quote-section');
+                const quoteData = getRandomQuote();
+            
+                quoteSection.innerHTML = `
+                    <img src="${quoteData.image}" alt="${quoteData.alt}">
+                    <h2>"${quoteData.quote}"</h2>
+                    <p>${quoteData.speaker}</p>
+                `;
+            }
+        
+            document.addEventListener('DOMContentLoaded', () => {
+                displayQuote();
+                setInterval(displayQuote, 24 * 60 * 60 * 1000);
+            });
+        
+            const messages = [
+                {
+                    messageTitle: "Nurturing Marriage",
+                    speaker: "Elder Russell M. Nelson",
+                    image: "https://www.lds.org/bc/content/shared/content/images/gospel-library/magazine/en2006lp.nfo:o:61.jpg",
+                    url: "https://www.churchofjesuschrist.org/study/liahona/2006/05/nurturing-marriage?lang=eng"
+                },
+                {
+                    messageTitle: "Don’t Be a Cold-Gravy Spouse",
+                    speaker: "Mark Clayton",
+                    image: "https://churchofjesuschrist.org/imgs/f0a22b3b309488ee84e5366177cd14883788d6d0/full/640%2C/0/default",
+                    url: "https://www.churchofjesuschrist.org/study/ensign/2018/10/dont-be-a-cold-gravy-spouse?lang=eng"
+                },
+                {
+                    messageTitle: "Choosing and Being the Right Spouse",
+                    speaker: "Thomas B. Holman",
+                    image: "http://ldsminds.com/wp-content/uploads/2015/08/thomasbholman.jpg",
+                    url: "https://www.churchofjesuschrist.org/study/ensign/2002/09/choosing-and-being-the-right-spouse?lang=eng#note_no_marker001"
+                },
+            ];
+            
+            function displayMessages() {
+                const messagesSection = document.querySelector('.messages-section');
+                messagesSection.innerHTML = "";
+            
+                messages.forEach(message => {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.classList.add('message');
+                
+                    messageDiv.innerHTML = `
+                        <img src="${message.image}" alt="${message.speaker}">
+                        <p><a href="${message.url}" target="_blank">${message.messageTitle}</a></p>
+                        <p>${message.speaker}</p>
+                    `;
+                
+                    messagesSection.appendChild(messageDiv);
+                });
+            }
+        </script>
+
+        <script defer src="scripts/getdates.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Wellfleet&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <img src="images/2x1Home.webp" alt="2x1Home Logo">
+                <h1>2x1HOME</h1>
+                <div class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Messages</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="quote-section">
+                <h2>"Quote of the day"</h2>
+                <img src="quote-image-placeholder.png" alt="Quote Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.</p>
+            </div>
+            <section class="messages-section">
+                <div class="message"></div>
+                <div class="message"></div>
+                <div class="message"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>&copy; <span id="currentyear"></span> 2x1Home - All rights reserved.</p>
+                <p>Last Update: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>
