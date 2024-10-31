@@ -88,6 +88,11 @@ section {
     background-color: rgb(0, 3, 199);
 }
 
+.font-list {
+    font-style: italic;
+    font-size: large;
+}
+
 .accent {
     color: rgb(0, 3, 199);
     font-weight: bolder;
