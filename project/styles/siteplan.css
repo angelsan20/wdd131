@@ -1,16 +1,19 @@
-* {
-    font-family: "Arimo", sans-serif;
+
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif;
 }
 
 body {
-    background-color: rgb(219, 242, 255);
-    min-width: 220px;
+    background-color: rgb(255, 231, 238);
+    min-width: 720px;
+    font-family: "Arimo", sans-serif;
 }
 
 header {
     margin: 0;
-    background-color: rgb(255, 231, 241);
-    padding: 0;
+    background-color: rgb(247, 228, 202);
+    padding: 10px 20px;
     border-bottom: solid 1px;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
@@ -18,6 +21,17 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+header img {
+    margin: 0;
+    width: 200px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    text-decoration: underline;
 }
 
 #sitename {
@@ -35,11 +49,50 @@ h2 {
 }
 
 section {
-    margin: 0 30px 0 30px;
+    margin: 0 60px 0 20px;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(134, 134, 134, 0.308);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#color-list {
+    list-style: none;
+}
+
+#color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.cb1 {
+    background-color: rgb(247, 228, 202);
+}
+
+.cb2 {
+    background-color: rgb(255, 231, 238);
+}
+
+.cb3 {
+    background-color: rgba(134, 134, 134, 0.308);
+}
+
+.cb4 {
+    background-color: rgb(0, 0, 0);
+}
+
+.cb5 {
+    background-color: rgb(0, 3, 199);
+}
+
+.accent {
+    color: rgb(0, 3, 199);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: large;
 }
 
 .wireframe-section {
@@ -47,7 +100,7 @@ section {
     align-items: start;
     flex-wrap: wrap;
     margin-top: 30px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #wireframe-1 img {
@@ -70,7 +123,7 @@ footer {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     text-align: center;
-    background-color: rgb(255, 231, 241);
+    background-color: rgb(247, 228, 202);
     color: rgb(0, 0, 0);
 }
 
