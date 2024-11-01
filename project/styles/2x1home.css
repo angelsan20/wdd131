@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(219, 242, 255);
+    /*background-color: rgb(219, 242, 255);*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -25,17 +25,24 @@ body {
     flex: 1;
 }
 
-.nav {
+.navigation {
     display: flex;
     gap: 15px;
 }
 
-.nav a {
+.navigation a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
-    background-color: #ddd;
+    background-color: rgb(221, 221, 221);
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .menu-toggle {
@@ -53,12 +60,18 @@ body {
     content: "☰";
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .menu-toggle.open::before {
     content: "X";
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.navigation.open {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .quote-section {
@@ -105,9 +118,9 @@ body {
 .message {
     width: 100%;
     max-width: 300px;
-    background-color: #f9f9f9;
+    background-color: rgb(0, 0, 0, 0.363);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 5px;
     box-sizing: border-box;
     flex: 1 1 calc(33.333% - 40px);
@@ -117,7 +130,7 @@ body {
 }
 
 .message img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -134,17 +147,23 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-@media (max-width: 960px) {
-    .nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+@media (min-width: 960px) {
+    .navigation {
+        display: flex !important;
     }
 
-    .nav a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid #ddd;
+    .menu-toggle {
+        display: none;
+    }
+
+    .header {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 960px) {
+    .navigation {
+        display: none;
     }
 
     .menu-toggle {
@@ -153,5 +172,21 @@ footer {
 
     .header {
         flex-wrap: wrap;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgb(221, 221, 221);
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
