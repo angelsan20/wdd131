@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -12,14 +13,23 @@ body {
     padding: 10px 20px;
     background-color: rgb(255, 231, 241);
 }
+
 .header img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
 }
+
+.header h1 {
+    margin: 0;
+    flex: 1;
+}
+
 .nav {
     display: flex;
     gap: 15px;
 }
+
 .nav a {
     text-decoration: none;
     color: black;
@@ -27,37 +37,121 @@ body {
     background-color: #ddd;
     border-radius: 5px;
 }
-.quote-section, .messages-section, .footer {
-    padding: 20px;
-    text-align: center;
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 2.4rem;
+    right: 1rem;
+    cursor: pointer;
 }
+
+.menu-toggle::before {
+    content: "☰";
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.menu-toggle.open::before {
+    content: "X";
+    color: rgb(255, 255, 255);
+}
+
 .quote-section {
-    background-color: #e9e9e9;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 2rem;
+    margin: 15px 30px;
+    display: grid;
+    grid-template-columns: 200px 10px 1fr 20px;
+    grid-template-rows: auto 1fr;
 }
+
 .quote-section img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
+    width: 180px;
+    height: auto;
+    margin: 20px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 2px solid rgb(0, 0, 0);
 }
+
+.p-quote {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.p-speaker {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 10px;
+    font-size: 20px;
+}
+
 .messages-section {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
+
 .message {
-    width: 45%;
+    width: 100%;
+    max-width: 300px;
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .message img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-.message .small-img {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 10px auto;
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 231, 241);
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 960px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
 }
