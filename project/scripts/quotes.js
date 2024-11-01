@@ -84,8 +84,10 @@ function displayQuote() {
     
     quoteSection.innerHTML = `
         <img src="${quoteData.image}" alt="${quoteData.alt}">
-        <p class="p-quote">"${quoteData.quote}"</p>
-        <p class="p-speaker">${quoteData.speaker}</p>
+        <div class="quote-text">
+            <p class="p-quote">"${quoteData.quote}"</p>
+            <p class="p-speaker">${quoteData.speaker}</p>
+        </div>
     `;
 }
 
