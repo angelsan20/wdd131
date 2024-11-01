@@ -1,5 +1,4 @@
 body {
-    /*background-color: rgb(219, 242, 255);*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,17 +11,20 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(255, 231, 241);
+    flex-wrap: nowrap;
 }
 
 .header img {
     width: 160px;
-    height: 160px;
+    height: auto;
     margin-right: 20px;
 }
 
 .header h1 {
     margin: 0;
     flex: 1;
+    font-size: 2rem;
+    white-space: nowrap;
 }
 
 .navigation {
@@ -50,9 +52,7 @@ body {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    position: absolute;
-    top: 2.4rem;
-    right: 1rem;
+    margin-left: auto;
     cursor: pointer;
 }
 
@@ -155,20 +155,6 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-@media (min-width: 960px) {
-    .navigation {
-        display: flex !important;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .header {
-        flex-wrap: nowrap;
-    }
-}
-
 @media (max-width: 960px) {
     .navigation {
         display: none;
@@ -180,6 +166,14 @@ footer {
 
     .header {
         flex-wrap: wrap;
+    }
+
+    .header image {
+        width: 120px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
     }
 
     .navigation.open {
@@ -220,7 +214,7 @@ footer {
 
 @media (min-width: 961px) {
     .quote-section {
-        max-width: 1000px;
+        max-width: 1024px;
     }
 
     .quote-section img {

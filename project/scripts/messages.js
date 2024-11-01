@@ -28,7 +28,7 @@ function displayMessages() {
         messageDiv.classList.add('message');
         
         messageDiv.innerHTML = `
-            <img src="${message.image}" alt="${message.speaker}">
+            <img src="${message.image}" alt="${message.speaker}" loading="lazy">
             <p><a href="${message.url}" target="_blank">${message.messageTitle}</a></p>
             <p>${message.speaker}</p>
         `;

@@ -83,7 +83,7 @@ function displayQuote() {
     const quoteData = getRandomQuote();
     
     quoteSection.innerHTML = `
-        <img src="${quoteData.image}" alt="${quoteData.alt}">
+        <img src="${quoteData.image}" alt="${quoteData.alt}" loading="lazy">
         <div class="quote-text">
             <p class="p-quote">"${quoteData.quote}"</p>
             <p class="p-speaker">${quoteData.speaker}</p>
