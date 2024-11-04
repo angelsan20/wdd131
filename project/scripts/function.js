@@ -154,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Form send to email functionality script
 //  this script uses the “EmailJS” web service so as not to reveal any information about the web creator.
 
-
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -170,6 +169,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     emailjs.send('service_is4cvha', 'template_0apxhu8', formData)
         .then(function(response) {
             alert('Form submitted successfully!');
+            window.location.href = 'review2x1.html';
         }, function(error) {
             alert('An error occurred. Please try again.');
         });
