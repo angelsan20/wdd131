@@ -33,7 +33,7 @@ const messages = [
     {
         messageTitle: "Choosing and Being the Right Spouse",
         speaker: "Thomas B. Holman",
-        image: "http://ldsminds.com/wp-content/uploads/2015/08/thomasbholman.jpg",
+        image: "https://ldsminds.com/wp-content/uploads/2015/08/thomasbholman.jpg",
         url: "https://www.churchofjesuschrist.org/study/ensign/2002/09/choosing-and-being-the-right-spouse?lang=eng#note_no_marker001"
     },
 ];
@@ -148,5 +148,29 @@ function displayQuote() {
 
 document.addEventListener('DOMContentLoaded', () => {
     displayQuote();
-    setInterval(displayQuote, 24 * 60 * 60 * 1000); // Cambia cada 24 horas
+    setInterval(displayQuote, 24 * 60 * 60 * 1000);
+});
+
+// Form send to email functionality script
+//  this script uses the “EmailJS” web service so as not to reveal any information about the web creator.
+
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.init('81jNEkDp6fDGgLfWj');
+
+    const formData = {
+        contact_reason: document.getElementById('contact-reason').value,
+        contact_message: document.getElementById('contact-message').value,
+        contact_name: document.getElementById('contact-name').value,
+        contact_email: document.getElementById('contact-email').value,
+    };
+
+    emailjs.send('service_is4cvha', 'template_0apxhu8', formData)
+        .then(function(response) {
+            alert('Form submitted successfully!');
+        }, function(error) {
+            alert('An error occurred. Please try again.');
+        });
 });

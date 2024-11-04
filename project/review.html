@@ -11,6 +11,7 @@
 
         <script defer src="scripts/getdates.js"></script>
         <script defer src="scripts/function.js"></script>
+        <script defer src="scripts/submission-counter.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,13 +34,21 @@
             </div>
         </header>
         <main>
-            <div class="quote-section"></div>
-            <section class="messages-section"></section>
+            <div class="container">
+                <header>
+                    <h1>Thank You for Your Ideas!</h1>
+                </header>
+                <main>
+                    <p>Your Idea has been successfully submitted. We appreciate your feedback.</p>
+                    <a href="contact-us.html">I'd like to say more...</a>
+                </main>
+            </div>
         </main>
         <footer>
             <div class="footer">
                 <p>&copy; <span id="currentyear"></span> 2x1Home - All rights reserved.</p>
                 <p>Last Update: <span id="lastModified"></span></p>
+                <p id="counter"></p>
             </div>
         </footer>
     </body>
