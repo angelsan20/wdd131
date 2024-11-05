@@ -1,4 +1,4 @@
-const form = document.getElementById('contact-form');
+const form = document.getElementById('2x1Home-form');
 const counterElement = document.getElementById('counter');
 
 let counter = parseInt(localStorage.getItem('surveyCount')) || 0;
